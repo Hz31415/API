@@ -26,7 +26,7 @@
     - [Enable external wallet](#enable-external-wallet)
     - [Disable external wallet](#disable-external-wallet)
   - [Request for rate information](#request-for-rate-information)
-    - [Get top50 cryptocurrencies' information](#get-top50-cryptocurrenies'-information)
+    - [Get top50 cryptocurrencies' information](#get-top50-cryptocurrenies-information)
     - [Selected cryptocurrency to dollar rate](#selected-cryptocurrency-to-dollar-rate)
     - [Selected cryptocurrency to Zam rate](#selected-cryptocurrency-to-zam-rate)
   - [Amount information](#amount-information)
