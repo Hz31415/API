@@ -556,7 +556,7 @@ Response example:
 }
 ```
 
-### Selected cyptocurrency to dollar rate
+### Selected cryptocurrency to dollar rate
 Gets rate to dollar. Headers are described below.
 
 Request parameters:
@@ -605,7 +605,7 @@ Response example:
 }
 ```
 
-### Selected cyptocurrency to Zam rate
+### Selected cryptocurrency to Zam rate
 Gets rate to Zam. Headers are described below.
 
 Request parameters:
