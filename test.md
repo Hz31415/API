@@ -45,6 +45,21 @@ The Zam.io API that serves for creating and managing Your wallet:
 * Working with external wallets
 * Ability to update rate information
 
+# HTTP Return Codes
+
+* HTTP `4XX` return codes are used for malformed requests;
+  the issue is on the sender's side.
+* HTTP `400` return code is used when the WAF Limit (Web Application Firewall) has been violated.
+* HTTP `404` return code is used when requested data not found.
+* HTTP `408` return code is used when request timeout exceeded.
+* HTTP `5XX` return codes are used for internal errors; the issue is on
+  Zam's side.
+  It is important to **NOT** treat this as a failure operation; the execution status is
+  **UNKNOWN** and could have been a success.
+* HTTP `500` return code is used when internal server error occured.
+* HTTP `503` return code is used when requested service is unreachable.
+
+
 # Common response parts
 
 The response always consist of two objects `meta` and `data`.
