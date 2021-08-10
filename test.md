@@ -22,9 +22,9 @@
     - [Request for transaction order generation](#request-for-transaction-order-generation)
     - [Order for cryptocurrency buy](#order-for-cryptocurrency-buy)
     - [Order for cryptocurrency sell](#order-for-cryptocurrency-sell)
-  - [Enable/Disable external wallets](#enable/disable-external-wallets)
+  - [Enable or Disable external wallets](#enable-or-disable-external-wallets)
     - [Enable external wallet](#enable-external-wallet)
-    - [Disableexternal wallet](#disable-external-wallet)
+    - [Disable external wallet](#disable-external-wallet)
   - [Request for rate information](#request-for-rate-information)
     - [Get top50 cryptocurrencies' information](#get-top50-cryptocurrenies'-information)
     - [Selected cryptocurrency to dollar rate](#selected-cryptocurrency-to-dollar-rate)
@@ -434,7 +434,7 @@ Response example:
  }
 }
 ```
-## Enable/Disable external wallets
+## Enable or Disable external wallets
 
 ### Enable external wallet
 
