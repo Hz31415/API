@@ -138,7 +138,7 @@ Response example:
      },
      "data": 
      {
-      "passportMessage": "adipisicing in",
+      "passportMessage": "Passport phrase",
       "agreement": 
       {
        "id": "173e4567-e89b-12d3-a456-426624174000",
@@ -167,8 +167,8 @@ newPassword | STRING | New password's hash.
 Request example:
 ```json
     {
-     "oldPassword": "ut proident",
-     "newPassword": "sit laborum proident nisi do"
+     "oldPassword": "839a54bf20626e4942bc8f11873f0654",
+     "newPassword": "fb29ed3264c5a92bcf74eccd7489e828"
     }
 ```
 
@@ -232,7 +232,7 @@ Response example:
   "message": "Success"
  },
  "data": {
-  "privateKey": "sint ut mollit occaecat dolore"
+  "privateKey": "bd0c8e3bd998a500b0984584a7245ca0"
  }
 }
 ```
@@ -256,10 +256,10 @@ password | STRING | Hash of user’s password.
 Request example:
 ```json
 {
-    "token": "irure ut eiusmod in",
-    "deviceId": "amet d",
-    "login": "velit consectetur ut irure",
-    "password": "in ut et"
+    "token": "94a08da1fecbb6e8b46990538c7b50b2",
+    "deviceId": "123e4567-e89b-12d3-a456-426614174000",
+    "login": "UserName",
+    "password": "fb29ed3264c5a92bcf74eccd7489e828"
 }
 ```
 
@@ -282,7 +282,7 @@ Response example:
   "message": "Success"
  },
  "data": {
-  "token": "esse ullamco amet nostrud",
+  "token": "94a08da1fecbb6e8b46990538c7b50b2",
   "agreement": {
    "id": "173e4567-e89b-12d3-a456-426624174000",
    "name": "Security agreement",
@@ -340,15 +340,15 @@ Response example:
   "message": "Success"
  },
  "data": {
-  "blockchainFrom": "non consequat",
-  "blockchainTo": "laboris aute velit",
-  "addressTo": "veniam magna sunt",
-  "amount": "veniam qui enim Excepteur",
-  "dateCreate": "deserunt aliquip",
-  "addressContractFrom": "est laboris aliqua ut do",
-  "addressContractTo": "ex velit",
-  "adressFrom": "ad",
-  "currency": "officia ut deserunt ullamco"
+  "blockchainFrom": "",
+  "blockchainTo": "",
+  "addressTo": "",
+  "amount": "34.00",
+  "dateCreate": "1947-04-26T15:41:07.646Z",
+  "addressContractFrom": "",
+  "addressContractTo": "",
+  "adressFrom": "",
+  "currency": "USD"
  }
 }
 ```
@@ -393,13 +393,13 @@ Response example:
   "message": "Success"
  },
  "data": {
-  "blockchainTo": "occaecat ea Duis cillum",
-  "addressTo": "culpa consequat",
-  "amount": "laboris irure amet",
-  "dateCreate": "quis elit non",
-  "order": "aute culpa",
-  "addressContractTo": "irure commodo Duis in",
-  "currency": "labore ut Ut anim"
+  "blockchainTo": "",
+  "addressTo": "",
+  "amount": "34.00",
+  "dateCreate": "1947-04-26T15:41:07.646Z",
+  "order": "",
+  "addressContractTo": "",
+  "currency": "USD"
  }
 }
 ```
@@ -415,15 +415,15 @@ PUT https://zam.io/api/order/sale?priority=MEDIUM&blockchainFrom=doadipisicing&b
 Request example:
 ```json
 {
-    "spbPhone1": "dolore qui cillum",
-    "spbName1": "dolor nulla laboris esse do",
-    "visaCardNumber2": "dolore minim commodo",
-    "visaName2": "do fugiat",
-    "masterCardNumber3": "et nisi minim quis",
-    "masterName3": "irure",
-    "bankAccountPaymentAccount4": "ad",
-    "bankAccountBIK4": "dolor aliquip cillum exercitation",
-    "bankAccountName4": "quis"
+    "spbPhone1": "",
+    "spbName1": "",
+    "visaCardNumber2": "0000 0000 0000 0000",
+    "visaName2": "Name Surname",
+    "masterCardNumber3": "0000 0000 0000 0000",
+    "masterName3": "Name Surname",
+    "bankAccountPaymentAccount4": "",
+    "bankAccountBIK4": "",
+    "bankAccountName4": ""
 }
 ```
 
@@ -450,15 +450,15 @@ Response example:
   "message": "Success"
  },
  "data": {
-  "blockchainFrom": "non consequat",
-  "blockchainTo": "laboris aute velit",
-  "addressTo": "veniam magna sunt",
-  "amount": "veniam qui enim Excepteur",
-  "dateCreate": "deserunt aliquip",
-  "addressContractFrom": "est laboris aliqua ut do",
-  "addressContractTo": "ex velit",
-  "adressFrom": "ad",
-  "currency": "officia ut deserunt ullamco"
+  "blockchainFrom": "",
+  "blockchainTo": "",
+  "addressTo": "",
+  "amount": "34.00",
+  "dateCreate": "1947-04-26T15:41:07.646Z",
+  "addressContractFrom": "",
+  "addressContractTo": "",
+  "adressFrom": "",
+  "currency": "USD"
  }
 }
 ```
@@ -484,9 +484,9 @@ adress | STRING | Wallet's adress.
 Request example:
 ```json
 {
- "blockchain": "officia laboris",
- "addressContract": "proident in ut",
- "adress": "et esse"
+ "blockchain": "Zam",
+ "addressContract": "",
+ "adress": ""
 }
 ```
 
@@ -561,24 +561,24 @@ Response example:
  },
  "data": [
   {
-   "blockchain": "consequat fugiat",
-   "address": "quis eiusmod Duis nostrud dolore",
-   "currency": "ad nulla officia quis",
-   "rateToDollar": "sint officia consectetur sed",
-   "rateToZam": "ad Excepteur est",
-   "amount": "commodo id aliquip",
-   "dateRate": "adipisicing labore irure dolore",
-   "addressContract": "dolor"
+   "blockchain": "BTC",
+   "address": "",
+   "currency": "BTC",
+   "rateToDollar": "100000.00",
+   "rateToZam": "0.5",
+   "amount": "34.5",
+   "dateRate": "1947-04-26T15:41:07.646Z",
+   "addressContract": ""
   },
   {
-   "blockchain": "do nisi",
-   "address": "irure Lorem in in",
-   "currency": "esse anim consectetur in sit",
-   "rateToDollar": "quis officia aute",
-   "rateToZam": "irure voluptate pariatur",
-   "amount": "occaecat laborum aliqua amet Lorem",
-   "dateRate": "voluptate occ",
-   "addressContract": "Duis eiusmod"
+   "blockchain": "ETH",
+   "address": "",
+   "currency": "BTC",
+   "rateToDollar": "200",
+   "rateToZam": "0.005",
+   "amount": "34.5",
+   "dateRate": "1947-04-26T15:41:07.646Z",
+   "addressContract": ""
   }
  ]
 }
@@ -620,15 +620,15 @@ Response example:
   "status": "OK",
   "message": "Success"
  },
- "data": {
-  "blockchain": "sed non",
-  "address": "incididunt mollit",
-  "currency": "aliquip quis ut",
-  "rateToDollar": "eu ad",
-  "rateToZam": "commodo qui sint",
-  "amount": "sunt esse minim",
-  "dateRate": "Ut minim sunt Duis",
-  "addressContract": "n"
+ "data":{
+  "blockchain": "ETH",
+  "address": "",
+  "currency": "BTC",
+  "rateToDollar": "200",
+  "rateToZam": "0.005",
+  "amount": "34.5",
+  "dateRate": "1947-04-26T15:41:07.646Z",
+  "addressContract": ""
  }
 }
 ```
@@ -669,15 +669,15 @@ Response example:
   "status": "OK",
   "message": "Success"
  },
- "data": {
-  "blockchain": "sed non",
-  "address": "incididunt mollit",
-  "currency": "aliquip quis ut",
-  "rateToDollar": "eu ad",
-  "rateToZam": "commodo qui sint",
-  "amount": "sunt esse minim",
-  "dateRate": "Ut minim sunt Duis",
-  "addressContract": "n"
+ "data":{
+  "blockchain": "ETH",
+  "address": "",
+  "currency": "BTC",
+  "rateToDollar": "200",
+  "rateToZam": "0.005",
+  "amount": "34.5",
+  "dateRate": "1947-04-26T15:41:07.646Z",
+  "addressContract": ""
  }
 }
 ```
@@ -712,18 +712,18 @@ Response example:
  },
  "data": [
   {
-   "blockchain": "consequat est et anim",
-   "address": "voluptate incididunt consectetur",
-   "currency": "et mollit deserunt",
-   "amount": "irure do non",
-   "addressContract": "do"
+   "blockchain": "BTC",
+   "address": "",
+   "currency": "BTC",
+   "amount": "34.56",
+   "addressContract": ""
   },
   {
-   "blockchain": "eiusmod amet sed dolor",
-   "address": "magna do amet",
-   "currency": "labore",
-   "amount": "eu irure dolore magna",
-   "addressContract": "in esse aute"
+   "blockchain": "Zam",
+   "address": "",
+   "currency": "Zam",
+   "amount": "34.56",
+   "addressContract": ""
   }
  ]
 }
@@ -747,48 +747,48 @@ Response example:
  },
  "data": [
   {
-   "blockchainFrom": "officia velit",
-   "blockchainTo": "Ut culpa mollit in",
-   "addressTo": "proident Lorem",
-   "amount": "cupidatat commodo dolor sed",
+   "blockchainFrom": "BTC",
+   "blockchainTo": "Zam",
+   "addressTo": "",
+   "amount": "34.56",
    "commission": [
     {
-     "paymentTransaction": "irure sed",
-     "commissionTransaction": "laborum irure molli"
+     "paymentTransaction": "",
+     "commissionTransaction": ""
     },
     {
-     "paymentTransaction": "minim",
-     "commissionTransaction": "esse consectetur fugiat officia ullamco"
+     "paymentTransaction": "",
+     "commissionTransaction": ""
     }
    ],
-   "dateCreate": "qui enim sunt culpa",
-   "dateConfirm": "amet est dolor veniam",
-   "addressContractFrom": "commodo",
-   "addressContractTo": "incididunt co",
-   "adressFrom": "incididunt irure",
-   "currency": "dolore in deserunt non"
+   "dateCreate": "1947-04-26T15:41:07.646Z",
+   "dateConfirm": "1947-04-26T15:41:07.646Z",
+   "addressContractFrom": "",
+   "addressContractTo": "",
+   "adressFrom": "",
+   "currency": ""
   },
   {
-   "blockchainFrom": "in do",
-   "blockchainTo": "ut commodo ullamco",
-   "addressTo": "qui ut",
-   "amount": "do laborum tempor",
+   "blockchainFrom": "ETH",
+   "blockchainTo": "Zam",
+   "addressTo": "",
+   "amount": "34.56",
    "commission": [
     {
-     "paymentTransaction": "velit veniam aliquip nulla cupidatat",
-     "commissionTransaction": "laborum fugiat eu in"
+     "paymentTransaction": "",
+     "commissionTransaction": ""
     },
     {
-     "paymentTransaction": "Excepteur officia proident n",
-     "commissionTransaction": "culpa exercitation"
+     "paymentTransaction": "",
+     "commissionTransaction": ""
     }
    ],
-   "dateCreate": "ex laborum non magna labore",
-   "dateConfirm": "et sed",
-   "addressContractFrom": "in enim",
-   "addressContractTo": "ut non",
-   "adressFrom": "laboris",
-   "currency": "cupidatat sunt ex Lorem"
+   "dateCreate": "1947-04-26T15:41:07.646Z",
+   "dateConfirm": "1947-04-26T15:41:07.646Z",
+   "addressContractFrom": "",
+   "addressContractTo": "",
+   "adressFrom": "",
+   "currency": ""
   }
  ]
 }
@@ -850,25 +850,25 @@ Response example:
   "message": "Success"
  },
  "data": {
-  "blockchainFrom": "ea",
-  "blockchainTo": "labore nostrud",
-  "addressTo": "laborum in",
-  "amount": "deserunt",
+  "blockchainFrom": "",
+  "blockchainTo": "",
+  "addressTo": "",
+  "amount": "",
   "commission": [
    {
-    "paymentTransaction": "dolor dolore laboris",
-    "commissionTransaction": "in adipisicing"
+    "paymentTransaction": "",
+    "commissionTransaction": ""
    },
    {
-    "paymentTransaction": "amet Excepteur",
-    "commissionTransaction": "Duis amet"
+    "paymentTransaction": "",
+    "commissionTransaction": ""
    }
   ],
-  "dateActual": "enim est quis in",
-  "addressContractFrom": "cupidatat sit",
-  "addressContractTo": "dolor commodo proident dolore in",
-  "adressFrom": "do eu deserunt nostrud",
-  "currency": "in"
+  "dateActual": "1947-04-26T15:41:07.646Z",
+  "addressContractFrom": "",
+  "addressContractTo": "",
+  "adressFrom": "",
+  "currency": ""
  }
 }
 ```
