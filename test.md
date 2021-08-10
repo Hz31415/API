@@ -107,11 +107,11 @@ Request example:
 ```json
     {
       "phone": "0647744360",
-      "fullName": "tempor laboris ipsum esse",
-      "refCode": "ullamco",
+      "fullName": "Name Surname",
+      "refCode": "{referral code}",
       "codeRequest": 
       {
-       "phone": "62038729829242"
+       "phone": "0647744360"
       }
     }
 ```    
