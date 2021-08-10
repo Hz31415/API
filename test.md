@@ -804,7 +804,7 @@ Response example:
  }
 }
 ```
-## Claculation requests
+## Calculation requests
 
 ### Transaction information request
 Request to get approximate rate and cost of transaction. Headers are described below.
