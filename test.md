@@ -59,6 +59,19 @@ The Zam.io API that serves for creating and managing Your wallet:
 * HTTP `500` return code is used when internal server error occured.
 * HTTP `503` return code is used when requested service is unreachable.
 
+# Error Codes
+* Any endpoint can return an ERROR
+
+Sample Payload below:
+```json
+{
+ "meta": {
+  "status": "OK",
+  "message": "ERROR - Authorization error"
+ },
+ "data": {}
+}
+```
 
 # Common response parts
 
