@@ -300,29 +300,29 @@ Here should be table
 
 Request parameters:
 
-Name | Type | Description
------------- | ------------ | ------------
-priority | STRING | Transaction priority (default value - MEDIUM, optional - TOP).
-blockchainFrom | STRING | Source platform name.
-blockchainTo | STRING | Destination platform name.
-addressContractFrom | STRING | Contract adrress on source wallet.
-addressContractTo | STRING | Contract address on destiantion wallet.
-adressFrom | STRING | Soruce wallet address.
-addressTo | STRING | Destionation wallet address.
-currency | STRING | Cryptocurrency shortname.
-amount | STRING | Cryptrocurrency amount.
-dateCreate | STRING | Order creation date:time.
+Name | Type | Description | Example
+------------ | ------------ | ------------ | ------------
+priority | STRING | Transaction priority (default value - MEDIUM, optional - TOP). | MEDIUM
+blockchainFrom | STRING | Source platform name. | Binance
+blockchainTo | STRING | Destination platform name. | Binance
+addressContractFrom | STRING | Contract adrress on source wallet. | 
+addressContractTo | STRING | Contract address on destiantion wallet. | 
+adressFrom | STRING | Soruce wallet address. | cosmos18ta688t40kmped54stvdgvgrazmyh0zqwhmhf5
+addressTo | STRING | Destionation wallet address. | 12PUTiN2VjQQzkmSNU7AauHNrQSuadbmhH
+currency | STRING | Cryptocurrency shortname. | BTC
+amount | STRING | Cryptrocurrency amount. | 3.45
+dateCreate | STRING | Order creation date:time. | 1947-04-26T15:41:07.646Z
 
 Request type and URL:
 ```
-GET https://zam.io/api/order?priority=MEDIUM&blockchainFrom=doadipisicing&blockchainTo=doadipisicing&addressContractFrom=doadipisicing&addressContractTo=doadipisicing&adressFrom=doadipisicing&addressTo=doadipisicing&amount=doadipisicing&paymentRestrictionTransaction=doadipisicing
+GET https://zam.io/api/order?priority=MEDIUM&blockchainFrom=string&blockchainTo=string&addressContractFrom=string&addressContractTo=string&adressFrom=string&addressTo=string&amount=string&paymentRestrictionTransaction=string
 ```
 
 Response parameters:
 
 Name | Type | Description
 ------------ | ------------ | ------------
-blockchainFrom | STRING | Source platform name.
+blockchainFrom | STRING | Source platform name
 blockchainTo | STRING | Destination platform name.
 addressTo | STRING | Destionation wallet address.
 amount | STRING | Cryptrocurrency amount.
@@ -357,20 +357,21 @@ The buy operation that follows after receiving transaction order.
 
 Request parameters:
 
-Name | Type | Description
------------- | ------------ | ------------
-priority | STRING | Transaction priority (default value - MEDIUM, optional - TOP).
-blockchainTo | STRING | Destination platform name.
-addressContractTo | STRING | Contract address on destiantion wallet.
-addressTo | STRING | Destionation wallet address.
-currency | STRING | Cryptocurrency shortname.
-amount | STRING | Cryptrocurrency amount.
-dateCreate | STRING | Order creation date:time.
+Name | Type | Description | Example
+------------ | ------------ | ------------ | ------------
+priority | STRING | Transaction priority (default value - MEDIUM, optional - TOP). | MEDIUM
+blockchainTo | STRING | Destination platform name. | Binance
+addressContractTo | STRING | Contract address on destiantion wallet. | 
+addressTo | STRING | Destionation wallet address. | 12PUTiN2VjQQzkmSNU7AauHNrQSuadbmhH
+currency | STRING | Cryptocurrency shortname. | BTC
+amount | STRING | Cryptrocurrency amount. | 3.45
+dateCreate | STRING | Order creation date:time. | 1947-04-26T15:41:07.646Z
 order | STRING | Reference to transaction order for payment.
+
 
 Request type and URL:
 ```
-PUT https://zam.io/api/order/purchase?priority=MEDIUM&blockchainTo=doadipisicing&addressContractTo=doadipisicing&addressTo=doadipisicing&amount=doadipisicing&paymentRestrictionTransaction=doadipisicing
+PUT https://zam.io/api/order/purchase?priority=MEDIUM&blockchainTo=string&addressContractTo=string&addressTo=string&amount=string&paymentRestrictionTransaction=string
 ```
 
 Response parameters:
