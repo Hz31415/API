@@ -422,9 +422,9 @@ spbName1 | STRING | Full name registered on on FPS.
 visaCardNumber2 | STRING | 16 digit card number.
 visaName2 | STRING | Fullname of card holder.
 masterCardNumber3 | STRING | 16 digit card number.
-bankAccountPaymentAccount4 | STRING | ------------.
-bankAccountBIK4 | STRING | -------------------------.
-bankAccountName4 | STRING | --------------------------.
+bankAccountPaymentAccount4 | STRING | 
+bankAccountBIK4 | STRING | 
+bankAccountName4 | STRING | 
 
 Request example:
 ```json
