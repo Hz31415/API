@@ -410,7 +410,7 @@ FPS - Fast Payment System
 
 Request type and URL:
 ```
-PUT https://zam.io/api/order/sale?priority=MEDIUM&blockchainFrom=doadipisicing&blockchainTo=doadipisicing&addressContractFrom=doadipisicing&addressContractTo=doadipisicing&adressFrom=doadipisicing&addressTo=doadipisicing&amount=doadipisicing&paymentRestrictionTransaction=doadipisicing
+PUT https://zam.io/api/order/sale?priority=MEDIUM&blockchainFrom=string&blockchainTo=string&addressContractFrom=string&addressContractTo=string&adressFrom=string&addressTo=string&amount=string&paymentRestrictionTransaction=string
 ```
 
 Request parameters:
@@ -528,7 +528,7 @@ adress | STRING | Wallet's adress.
 
 Request type and URL:
 ```
-DELETE https://zam.io/api/otherCrypto?blockchain=doadipisicing&addressContract=doadipisicing&address=doadipisicing
+DELETE https://zam.io/api/otherCrypto?blockchain=string&addressContract=string&address=string
 ```
 
 Response example:
@@ -611,7 +611,7 @@ addressContract | STRING | Wallet’s contract address.
 
 Request type and URL:
 ```
-GET https://zam.io/api/rate/dollar?currency=doadipisicing&blockchain=doadipisicing&addressContract=doadipisicing
+GET https://zam.io/api/rate/dollar?currency=string&blockchain=string&addressContract=string
 ```
 
 Response parameters:
@@ -660,7 +660,7 @@ addressContract | STRING | Wallet’s contract address.
 
 Request type and URL:
 ```
-GET https://zam.io/api/rate/zam?currency=doadipisicing&blockchain=doadipisicing&addressContract=do dipisicing
+GET https://zam.io/api/rate/zam?currency=string&blockchain=string&addressContract=do dipisicing
 ```
 
 Response parameters:
@@ -851,9 +851,24 @@ Response example:
 ### Transaction information request
 Request to get approximate rate and cost of transaction. Headers are described below.
 
+Request parameters:
+
+Name | Type | Description | Example
+------------ | ------------ | ------------ | ------------
+priority | STRING | Transaction priority (default value - MEDIUM, optional - TOP). | MEDIUM
+blockchainFrom | STRING | Source platform name. | Binance
+blockchainTo | STRING | Destination platform name. | Binance
+addressContractFrom | STRING | Contract adrress on source wallet. | 
+addressContractTo | STRING | Contract address on destiantion wallet. | 
+adressFrom | STRING | Soruce wallet address. | cosmos18ta688t40kmped54stvdgvgrazmyh0zqwhmhf5
+addressTo | STRING | Destionation wallet address. | 12PUTiN2VjQQzkmSNU7AauHNrQSuadbmhH
+currency | STRING | Cryptocurrency shortname. | BTC
+amount | STRING | Cryptrocurrency amount. | 3.45
+paymentRestrictionTransaction | STRING | Payment limit for transaction. | 5.147
+
 Request type and URL:
 ```
-GET https://zam.io/api/calculation?priority=MEDIUM&blockchainFrom=doadipisicing&blockchainTo=doadipisicing&addressContractFrom=doadipisicing&addressContractTo=doadipisicing&adressFrom=doadipisicing&addressTo=doadipisicing&amount=doadipisicing&paymentRestrictionTransaction=doadipisicing
+GET https://zam.io/api/calculation?priority=MEDIUM&blockchainFrom=string&blockchainTo=string&addressContractFrom=string&addressContractTo=string&adressFrom=string&addressTo=string&amount=string&paymentRestrictionTransaction=string
 ```
 
 Response example:
